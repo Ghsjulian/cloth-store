@@ -1,0 +1,37 @@
+/*
+Custom Css
+*/
+:root {
+    --main-color: #007517;
+}
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    padding: 0 !important;
+}
+.collapsed {
+    border: none;
+    outline: none;
+}
+
+#logo {
+    color: var(--main-color) !important;
+    font-weight: 900;
+    font-size: 25px !important;
+}
+button span #nav-btn {
+    color: var(--main-color);
+}
+
+.nav-item a {
+    color: var(--main-color);
+}
+#dev {
+    color: #ffdd4b !important;
+    font-weight: 900;
+    font-family: serif;
+    margin: 0 5px;
+    text-decoration: none;
+}
