@@ -1,13 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 
-// const myref = useRef();
-// const hideMenu = () => {
-//     // const currElm = navRef.current;
-//     alert("currElm");
-// };
-
 const Navbar = () => {
+    const btnRef = useRef(null);
+    const navRef = useRef(null);
+    
     return (
         <>
             {/*        <!-- Header -->*/}
@@ -24,6 +21,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <button
+                        ref={btnRef}
                         id="nav-btn"
                         className="navbar-toggler border-0"
                         type="button"
@@ -37,13 +35,18 @@ const Navbar = () => {
                     </button>
 
                     <div
+                        ref={navRef}
                         className="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
                         id="templatemo_main_nav"
                     >
                         <div className="flex-fill">
                             <ul className="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/">
+                                    <NavLink
+
+                                        className="nav-link"
+                                        to="/"
+                                    >
                                         Home
                                     </NavLink>
                                 </li>
